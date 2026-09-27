@@ -1,2 +1,2 @@
 # diadiktyo_project
-webb movie app with  edpoints
+project assigned in an undergrad course. it is a movie -related web app built with fast-api.
