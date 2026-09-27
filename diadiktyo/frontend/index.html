@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieLens App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>MovieLens Explorer</h1>
+    </header>
+
+    <main>
+        <section id="add-movie-section">
+            <h2>Προσθήκη Νέας Ταινίας</h2>
+            <div class="form-group">
+                <input type="text" id="new-movie-title" placeholder="Τίτλος Ταινίας (π.χ. The Matrix)">
+                <input type="text" id="new-movie-genres" placeholder="Είδη (π.χ. Action|Sci-Fi)">
+                <button id="add-movie-btn">Προσθήκη</button>
+            </div>
+            <p id="add-movie-message"></p>
+        </section>
+
+        <hr>
+
+        <section id="search-section">
+            <h2>Αναζήτηση Ταινιών</h2>
+            <div class="form-group">
+                <input type="text" id="search-keyword" placeholder="Γράψε λέξη-κλειδί...">
+                <button id="search-btn">Αναζήτηση</button>
+            </div>
+            
+            <div id="search-results">
+                </div>
+        </section>
+
+        <hr>
+        
+        <section id="tag-search-section">
+            <h2>Αναζήτηση με βάση Ετικέτες (Tags)</h2>
+            <div class="form-group">
+                <input type="text" id="tag-search-keyword" placeholder="Γράψε ετικέτα (π.χ. sci-fi)">
+                <button id="tag-search-btn">Αναζήτηση Tag</button>
+            </div>
+            <div id="tag-search-results"></div>
+        </section>
+        
+
+        <section id="recommendations-section">
+            <h2>Οι Συστάσεις Μου</h2>
+            <button id="get-recommendations-btn">Λήψη Συστάσεων</button>
+            
+            <div id="recommendations-results">
+                </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
